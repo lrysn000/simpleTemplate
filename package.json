@@ -1,9 +1,9 @@
 {
-  "name": "procurement-portal",
+  "name": "template",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://torili1210.github.io/procurement-portal/",
+  "homepage": "https://lrysn000.github.io/template/",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build --mode production",
