@@ -1,0 +1,102 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Move inline styles for the star rating to external CSS */
+.star-rating-container {
+  position: relative;
+  width: 8rem; /* Adjust width as needed */
+  height: 1.5rem; /* Adjust height as needed */
+  background-color: #e5e7eb; /* Gray background */
+  border-radius: 9999px; /* Full rounding */
+  overflow: hidden;
+}
+
+.star-rating-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #facc15; /* Yellow fill */
+}
+
+/* Update global styles to match the logo's aesthetic */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom, #ffffff, #e6f7ff);
+  color: #003366;
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'Arial', sans-serif;
+  color: #003366;
+}
+
+button {
+  background-color: #003366;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #00509e;
+}
+
+input {
+  border: 1px solid #003366;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 14px;
+}
+
+.tabs {
+  background-color: #e6f7ff;
+  border-radius: 10px;
+  padding: 10px;
+}
