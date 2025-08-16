@@ -12,6 +12,7 @@ posthog.init(import.meta.env.VITE_PUBLIC_POSTHOG_KEY, {
   debug: import.meta.env.MODE === 'development',
 });
 
+
 console.log("PostHog status:", posthog);
 
 
@@ -19,9 +20,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <PostHogProvider client={posthog}>
       <BrowserRouter
-        basename={import.meta.env.MODE === 'production' ? "/procurement-portal" : "/"}
+        basename={import.meta.env.MODE === 'production' ? "/simpleTemplate" : "/"}
       >
-        <App />
+        <App/>
       </BrowserRouter>
     </PostHogProvider>
   </React.StrictMode>,
