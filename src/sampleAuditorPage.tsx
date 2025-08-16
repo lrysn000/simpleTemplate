@@ -1,16 +1,11 @@
-// ✅ Main Page
-import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-import React from 'react';
-import { useSearchParams, useNavigate } from "react-router-dom";
-import { X } from "lucide-react";
-
+// ✅ Main Page;
+import { useNavigate } from "react-router-dom";
 export default function SampleAuditorPage({
   onLogout,
 }: {
   onLogout: () => void;
 }) {
 
-  const [searchParams] = useSearchParams();
 
   // 各区块进度值（可根据实际情况动态设置）
   const blocks = [
