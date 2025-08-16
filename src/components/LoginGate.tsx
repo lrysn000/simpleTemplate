@@ -1,14 +1,12 @@
 import { useState } from "react";
 
-export default function LoginGate({ onAccess }: { onAccess: (showRating: boolean) => void }) {
+export default function LoginGate({ onAccess }: { onAccess: () => void }) {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
   const handleLogin = () => {
-    if (password === "a") {
-      onAccess(false); // no rating
-    } else if (password === "b") {
-      onAccess(true); // show rating
+    if (password === "a" || password === "b") {
+      onAccess();
     } else {
       setError("Incorrect password.");
     }
